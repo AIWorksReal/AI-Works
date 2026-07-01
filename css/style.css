@@ -27,7 +27,7 @@ button,input,textarea{font:inherit}
 .brand{
   display:flex;
   align-items:center;
-  gap:4px;
+  gap:2px;
   font-weight:900;
   text-decoration:none;
   color:#050505;
