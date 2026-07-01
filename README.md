@@ -2,6 +2,10 @@ inbox-
 worksai@inbox.lv
 Aiworks123
 
+gmail-
+aiworksreal@gmail.com
+Aiworks123
+
 github-
 worksai@inbox.lv
 Aiworks123
