@@ -27,22 +27,22 @@ button,input,textarea{font:inherit}
 .brand{
   display:flex;
   align-items:center;
-  gap:4px;
+  gap: 6px;
   font-weight:900;
   text-decoration:none;
   color:#050505;
 }
 
 .brand-mark{
-  width:42px;
-  height:42px;
+  width:40px;
+  height:40px;
   display:grid;
   place-items:center;
   background:#050505;
   color:#fff;
   border-radius:10px;
-  font-size:28px;
-  font-weight:900;
+  font-size:24px;
+  font-weight:600;
   letter-spacing:-0.05em;
   box-shadow:0 8px 218px rgba(0,0,0,.12);
 }
@@ -51,7 +51,7 @@ button,input,textarea{font:inherit}
   font-size:21px;
   font-weight:900;
   letter-spacing:-0.06em;
-  margin-left:2px;
+  margin-left:-2px;
 }
 .desktop-nav{display:flex;align-items:center;gap:30px;margin-right:80px;}
 .desktop-nav a{font-size:13px;font-weight:650;color:#111;opacity:.85}
