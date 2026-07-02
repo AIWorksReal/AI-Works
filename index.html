@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Works – Mājaslapu izstrāde | Vienkārši. Ātri. Pārdomāti.</title>
 <meta name="description" content="AI Works izstrādā modernas, ātras un pārdomātas mājaslapas uzņēmumiem visā Latvijā.">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-<link rel="apple-touch-icon" href="/assets/favicon.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <meta property="og:title" content="AI Works">
 <meta property="og:description" content="Mūsdienīgas mājaslapas uzņēmumiem.">
 <meta property="og:image" content="https://aiworks.lv/assets/favicon.png">
 <meta property="og:url" content="https://aiworks.lv">
 <meta property="og:type" content="website">
+<meta name="google-analytics-id" content="G-VVE2QEEL1H">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,14 +33,6 @@
 }
 </script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VVE2QEEL1H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VVE2QEEL1H');
-</script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -53,6 +46,7 @@
       <nav class="desktop-nav" aria-label="Galvenā navigācija">
         <a href="#sakums">Sākums</a>
         <a href="#pakalpojumi">Pakalpojumi</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#process">Kā tas notiek</a>
         <a href="#cenas">Cenas</a>
         <a href="#faq">FAQ</a>
@@ -65,6 +59,7 @@
     <div class="mobile-nav" aria-label="Mobilā navigācija">
       <a href="#sakums">Sākums</a>
       <a href="#pakalpojumi">Pakalpojumi</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#process">Kā tas notiek</a>
       <a href="#cenas">Cenas</a>
       <a href="#faq">FAQ</a>
@@ -216,6 +211,60 @@
       </div>
     </section>
 
+    <section class="section-sm portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="small-label">Portfolio</span>
+          <h2>Mūsu paveiktie projekti</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <div class="portfolio-preview">
+              <div class="portfolio-browser"><span></span><span></span><span></span></div>
+              <div class="portfolio-screen">
+                <strong>Uģa Workshop</strong>
+                <small>Drīzumā</small>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Uģa Workshop</h3>
+              <p>Autoservisa mājaslapa. Projekts tiks pievienots pēc publicēšanas.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <div class="portfolio-preview">
+              <div class="portfolio-browser"><span></span><span></span><span></span></div>
+              <div class="portfolio-screen empty">
+                <strong>Projekts #2</strong>
+                <small>Drīzumā</small>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Projekts #2</h3>
+              <p>Vieta nākamajam klienta projektam un īsam aprakstam.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <div class="portfolio-preview">
+              <div class="portfolio-browser"><span></span><span></span><span></span></div>
+              <div class="portfolio-screen empty">
+                <strong>Projekts #3</strong>
+                <small>Drīzumā</small>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Projekts #3</h3>
+              <p>Vieta nākamajam klienta projektam un īsam aprakstam.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <section class="section-sm process" id="process">
       <div class="container">
         <div class="section-head reveal">
@@ -284,6 +333,7 @@
 
   <button type="submit">Nosūtīt ziņu <span>↗</span></button>
 
+  <p class="form-note">Nosūtot formu, jūs piekrītat <a href="privacy.html">Privātuma politikai</a>.</p>
   <p id="formStatus" class="form-status"></p>
 
 </form>
@@ -292,8 +342,26 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 AI Works. Web design &amp; development.</p>
+    <div class="footer-inner">
+      <p>© 2026 AI Works. Web design &amp; development.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privātuma politika</a>
+        <a href="cookies.html">Sīkfailu politika</a>
+      </div>
+    </div>
   </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Sīkfailu paziņojums" aria-live="polite">
+    <div class="cookie-text">
+      <strong>Izmantojam sīkfailus</strong>
+      <p>Mēs izmantojam nepieciešamos sīkfailus vietnes darbībai un analītikas sīkfailus, lai saprastu apmeklējumu.</p>
+    </div>
+    <div class="cookie-actions">
+      <a href="cookies.html" class="cookie-link">Uzzināt vairāk</a>
+      <button type="button" class="cookie-btn cookie-secondary" id="cookieReject">Noraidīt</button>
+      <button type="button" class="cookie-btn cookie-primary" id="cookieAccept">Piekrītu</button>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
