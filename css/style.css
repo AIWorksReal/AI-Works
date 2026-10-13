@@ -559,3 +559,9 @@ textarea{min-height:132px;resize:vertical}
     transform:translateX(4px);
     transition:.25s;
 }
+/* Language switcher */
+.language-switch{display:flex;align-items:center;gap:5px;white-space:nowrap;font-size:12px;font-weight:700;margin-left:8px}
+.language-switch a{padding:5px 7px;border-radius:7px;text-decoration:none;opacity:.55;color:inherit}
+.language-switch a.active{opacity:1;background:#111;color:#fff}
+.mobile-nav .language-switch{padding:12px 0;margin:0;justify-content:center}
+.mobile-nav .language-switch a{display:inline-flex;width:auto}

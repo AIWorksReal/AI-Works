@@ -70,6 +70,7 @@ if (cookieReject) {
   });
 }
 
+const isEnglish = document.documentElement.lang === 'en';
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
@@ -79,7 +80,7 @@ if (contactForm && formStatus) {
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalText = submitButton.innerHTML;
     submitButton.disabled = true;
-    submitButton.innerHTML = 'Sūta...';
+    submitButton.innerHTML = (isEnglish ? 'Sending...' : 'Sūta...');
     formStatus.textContent = '';
     formStatus.className = 'form-status';
 
@@ -92,14 +93,14 @@ if (contactForm && formStatus) {
 
       if (response.ok) {
         contactForm.reset();
-        formStatus.textContent = 'Ziņa veiksmīgi nosūtīta!';
+        formStatus.textContent = (isEnglish ? 'Message sent successfully!' : 'Ziņa veiksmīgi nosūtīta!');
         formStatus.classList.add('success');
       } else {
-        formStatus.textContent = 'Radās kļūda. Lūdzu, mēģiniet vēlreiz.';
+        formStatus.textContent = (isEnglish ? 'Something went wrong. Please try again.' : 'Radās kļūda. Lūdzu, mēģiniet vēlreiz.');
         formStatus.classList.add('error');
       }
     } catch (error) {
-      formStatus.textContent = 'Radās kļūda. Pārbaudiet interneta savienojumu.';
+      formStatus.textContent = (isEnglish ? 'Something went wrong. Please check your internet connection.' : 'Radās kļūda. Pārbaudiet interneta savienojumu.');
       formStatus.classList.add('error');
     } finally {
       submitButton.disabled = false;
